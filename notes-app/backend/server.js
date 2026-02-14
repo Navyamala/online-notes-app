@@ -12,10 +12,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Test route for Render root
+app.get("/", (req, res) => {
+  res.send("Online Notes App Backend is Running!");
+});
+
+// MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log(err));
+  .catch(err => console.log("MongoDB connection error:", err));
 
+// Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", noteRoutes);
 
