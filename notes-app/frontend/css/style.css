@@ -1,0 +1,33 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+}
+
+button {
+  background: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.note {
+  width: 250px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 12px;
+  color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
